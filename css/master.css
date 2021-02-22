@@ -1,0 +1,327 @@
+/*
+Bootstrap Project 2021
+Coder:Mostafa Mohamed Suliman
+firstColor:#08526d
+SecondColor:#ec1c23
+
+*/
+
+*{
+    list-style-type: none;
+}
+html{
+--firstcolor:#08526d;
+--secondcolor:#ec1c23;
+
+}
+ .fixed-top{
+    background-color: #DDD;
+}
+
+/* start with Nav Bar */
+.navbar-brand span{
+font-size: 40px;
+font-family: "Ara Assaf Regular";
+
+}
+.navbar-brand span:first-child{
+    color:#08526d ;
+    font-weight: bolder;
+}
+.navbar-brand span:last-child{
+    color:#ec1c23 ;
+}
+.navbar-light .navbar-nav .nav-link {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-left: 15px;
+    color:var(--firstcolor);
+    font-weight: 700;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    text-decoration: underline;
+}
+.navbar-light .navbar-nav .active>.nav-link{
+color:var(--secondcolor)
+}
+/* End of Nav Bar */
+/* start slider*/
+.slider{
+    background-color: #DDD;
+  
+}
+.carousel-inner{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.slider .carousel-inner h2{
+    position: absolute;
+    color:#FFF;
+    z-index: 3;
+    font-size: 70px;
+    max-width: 800px;
+    /* margin-left:20px; */
+    padding: 5px;
+    line-height: 1.5;
+    left: 100px;
+    text-shadow: 5px 5px 3px #000;
+}
+.slider .carousel-inner h2 span{
+    background-color: var(--secondcolor);
+    padding: 5px;
+
+}
+.slider .carousel-inner .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.4);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+.slider .carousel-indicators >li{
+    height: 9px;
+    cursor: pointer;
+    border-radius: 50%;
+    
+   
+}
+/* end slider*/
+/* start feature*/
+.feat{
+    margin-top: 50px;
+}
+.feat i{
+    background-color: var(--secondcolor);
+    padding: 20px;
+    color:#FFF;
+    border:1px solid #000
+
+}
+.feat h3{
+    color:var(--firstcolor);
+}
+.feat p{
+   color: #7c7a7a;
+}
+ /* end feature*/
+ /* start overview */
+ .overview{
+     background-color: #EEE;
+     text-align: center;
+     margin-top: 30px;
+     margin-bottom: 30px;
+ }
+ .overview h1, .feat-work h1{
+     text-transform: uppercase;
+     font-weight: bolder;
+     font-size: 40px;
+     padding: 10px;
+     font-family: sans-serif;
+ }
+ .overview p, .feat-work p{
+   line-height: 2.5;
+   font-size: 18px;
+
+ }
+ .overview span{
+     display: block;
+     margin-bottom: 10px;
+     letter-spacing: 3px;
+     font-weight: 700;
+     
+ }
+ .overview button {
+     padding: 8px;
+     border: 1px solid #000;
+     min-width: 150px;
+     font-weight: 700;
+     text-transform: uppercase;
+ }
+ /* end overview */
+ /* Start feautured work */
+ /* .badge{
+     width: 150px;
+     height: 30px;
+     border-radius:30px ;
+     font-weight: bolder;
+ } */
+ .row-nav{
+     display: flex;
+     justify-content: space-evenly;
+     padding: 100px;
+     
+ }
+ .row-nav{
+     padding: 10px 20px;
+ }
+ .row-nav li{
+     
+     color:var(--firstcolor);
+     min-width: 150px;
+     border: 1px solid #000;
+     text-transform: uppercase;
+     font:700 Tahoma
+ }  
+ .row-nav li:first-child{
+     background-color: var(--secondcolor);
+     color:#FFF;
+ }
+ .row-nav li:hover{
+     cursor: pointer;
+     background-color: var(--secondcolor);
+     color:#FFF;
+
+ }
+ .images{
+     margin-top: 50px;
+    
+ }
+ .feat-work .shuffle .row{
+     margin: 0;
+ }
+ .feat-work .shuffle .col-sm{
+     padding: 0;
+ }
+ .shuffle .col-sm img{
+     width: 100%;
+ }
+ .shuffle .col-sm img:hover{
+     transform: scale(0.9,0.9);
+     transition:all 5s;
+     border: 2px solid #000;
+    
+ }
+ /* End feautured work */
+ /* start contact */
+ .contact{
+     margin-top: 50px;
+     background-color: var(--secondcolor);
+     color:#FFF;
+     font-size: 25px;
+     padding: 10px;
+     
+ }
+
+ .contact button{
+    border:2px solid #FFF;
+    background: none;
+    margin: 5px;
+ }
+ /* end contact */
+ /* start form1*/
+ .register-form{
+     margin-top:50px ;
+     margin-bottom: 50px;
+ }
+ .note
+{
+    text-align: center;
+    height: 80px;
+    background: -webkit-linear-gradient(left, #0072ff, #8811c5);
+    color: #fff;
+    font-weight: bold;
+    line-height: 80px;
+}
+.form-content
+{
+    padding: 5%;
+    border: 1px solid #ced4da;
+    margin-bottom: 2%;
+}
+.form-control{
+    border-radius:1.5rem;
+}
+.btnSubmit
+{
+    border:none;
+    border-radius:1.5rem;
+    padding: 1%;
+    width: 20%;
+    cursor: pointer;
+    background: #0062cc;
+    color: #fff;
+}
+ /* end form1*/
+ /* start form2*/
+ .container{
+    height: 100%;
+    align-content: center;
+    }
+    
+    .card{
+    height: 370px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0,0,0,0.5) !important;
+    }
+    
+    .social_icon span{
+    font-size: 60px;
+    margin-left: 10px;
+    color: #FFC312;
+    }
+    
+    .social_icon span:hover{
+    color: white;
+    cursor: pointer;
+    }
+    
+    .card-header h3{
+    color: white;
+    }
+    
+    .social_icon{
+    position: absolute;
+    right: 20px;
+    top: -45px;
+    }
+    
+    .input-group-prepend span{
+    width: 50px;
+    background-color: #FFC312;
+    color: black;
+    border:0 !important;
+    }
+    
+    input:focus{
+    outline: 0 0 0 0  !important;
+    box-shadow: 0 0 0 0 !important;
+    
+    }
+    
+    .remember{
+    color: white;
+    }
+    
+    .remember input
+    {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+    }
+    
+    .login_btn{
+    color: black;
+    background-color: #FFC312;
+    width: 100px;
+    }
+    
+    .login_btn:hover{
+    color: black;
+    background-color: white;
+    }
+    
+    .links{
+    color: white;
+    }
+    
+    .links a{
+    margin-left: 4px;
+    }
+  
+ /* end form2*/
